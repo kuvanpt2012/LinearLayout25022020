@@ -12,3 +12,10 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
 }
+cách 1 : tạo ra thẻ view sẽ chứa 1 view khác
+<TextView>
+
+<TextView>
+
+cách 2: tạo thẻ view dùng hiển thị
+<TextView/>

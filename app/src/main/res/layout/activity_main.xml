@@ -14,5 +14,13 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+    <!--
+    cách 1 : tạo ra thẻ view sẽ chứa 1 view khác
+    <TextView>
+
+    <TextView>
+
+    cách 2: tạo thẻ view dùng hiển thị
+    <TextView/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
