@@ -4,43 +4,98 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="horizontal"
-    android:weightSum="10"
+    android:orientation="vertical"
     tools:context=".MainActivity">
+    <!--    Gravity: xin vị trí và xác định theo layout_width và layout_height và nhìn theo kích thước để duy chuyển-->
+    <!--    layout_gravity: xin phép thằng cha để được di chuyển-->
+    <!--    Margin: giãn cách xung quanh nó: vd margin top:10dp và marginleft:10dp-->
+    <!--        padding: giãn cách trong view: (không được tự ý giá trị), nó phụ thuộc vào layout_width và layout-height-->
 
-
+    <LinearLayout
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
         <TextView
             android:gravity="center"
-            android:background="#f20"
             android:layout_weight="1"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:text="View 1"
-            android:textSize="20sp" />
+            android:background="#f20"
+            android:textSize="30sp"
+            android:text="A"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"/>
         <TextView
             android:gravity="center"
-            android:layout_weight="2"
-            android:background="#0040FF"
+            android:layout_weight="1"
+            android:background="#6AFF00"
+            android:textSize="30sp"
+            android:text="B"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"/>
+        <TextView
+            android:gravity="center"
+            android:layout_weight="1"
+            android:background="#1E5514"
+            android:textSize="30sp"
+            android:text="C"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"/>
+        <TextView
+            android:gravity="center"
+            android:layout_weight="1"
+            android:background="#243588"
+            android:textSize="30sp"
+            android:text="D"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"/>
+
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+        <TextView
+            android:gravity="center"
+            android:layout_weight="1"
+            android:background="#B8A5A2"
+            android:textSize="30sp"
+            android:text="A"
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:text="View 2"
-            android:textSize="20sp" />
-    <TextView
-        android:gravity="center"
-        android:layout_weight="3"
-        android:background="#E91E63"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:text="View3"
-        android:textSize="20sp" />
-    <TextView
-        android:gravity="center"
-        android:layout_weight="4"
-        android:background="#00BCD4"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:text="View 4"
-        android:textSize="20sp" />
+            android:layout_height="match_parent"/>
+        <TextView
+            android:gravity="center"
+            android:layout_weight="1"
+            android:background="#49221C"
+            android:textSize="30sp"
+            android:text="B"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"/>
+        <TextView
+            android:gravity="center"
+            android:layout_weight="1"
+            android:background="#430D04"
+            android:textSize="30sp"
+            android:text="C"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"/>
+        <TextView
+            android:gravity="center"
+            android:layout_weight="1"
+            android:background="#29110D"
+            android:textSize="30sp"
+            android:text="D"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"/>
+
+
+
+
+    </LinearLayout>
+
 
 
 
